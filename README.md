@@ -27,3 +27,7 @@ Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor Diego?"]
 Test "It will return the output in reversed order"
 Code: beepBoop("Diego", 3).reverse();
 Expected Output: ["Won't you be my neighbor Diego?", "Boop!", "Beep!", 0]
+
+Test "It will return the output as a string with spaces"
+Code: beepBoop("Diego", 3).join();
+Expected Output: "0 Beep! Boop! Won't you be my neighbor Diego?"

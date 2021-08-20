@@ -20,9 +20,15 @@ function beepBoop (name, num) {
 $(document).ready(function () {
   $("#formOne").submit(function (event) {
     event.preventDefault();
+    $("#output").empty();
     const nameInput = $("#nameInput").val();
     const numInput = $("#numInput").val();
-    $("#output").append(beepBoop(nameInput, numInput));
-    $("#output").append(beepBoop(nameInput, numInput).reverse());
+    $("#output")
+      .append("<p>" + beepBoop(nameInput, numInput)
+      .join(" ") + "</p>");
+    $("#output")
+      .append("<p>" + beepBoop(nameInput, numInput)
+      .reverse()
+      .join(" ") + "</p>");
   });
 });
