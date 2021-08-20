@@ -22,6 +22,7 @@ $(document).ready(function () {
     event.preventDefault();
     const nameInput = $("#nameInput").val();
     const numInput = $("#numInput").val();
-    document.getElementById("output").innerHTML = beepBoop(nameInput, numInput);
+    $("#output").append(beepBoop(nameInput, numInput));
+    $("#output").append(beepBoop(nameInput, numInput).reverse());
   });
 });

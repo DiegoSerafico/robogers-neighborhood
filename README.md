@@ -23,3 +23,7 @@ Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 
 Test "It will return the output with the inputer name at the end of the question for number 3 case"
 Code: beepBoop("Diego", 3);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor Diego?"]
+
+Test "It will return the output in reversed order"
+Code: beepBoop("Diego", 3).reverse();
+Expected Output: ["Won't you be my neighbor Diego?", "Boop!", "Beep!", 0]
