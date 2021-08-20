@@ -5,6 +5,9 @@ body {
 .container {
   background-color: #192231;
   color: azure;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
 }
 
 .jumbotron {
@@ -12,6 +15,14 @@ body {
   background-size: cover;
   color: azure;
   -webkit-text-stroke: 1px black;
+}
+
+.jumbotron h1 {
+  font-size: 40px;
+}
+
+.jumbotron h2 {
+  font-size: 25px;
 }
 
 .jumbotron img {
@@ -25,4 +36,22 @@ body {
   display: block;
   margin: auto;
   margin-bottom: 20px;
+}
+
+#formOne {
+  background-color: rgb(70, 161, 161);
+  border: 1px solid black;
+}
+
+.form-group {
+  margin: 20px;
+}
+
+#output {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#reverse {
+  display: none;
 }

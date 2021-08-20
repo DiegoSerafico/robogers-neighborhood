@@ -8,7 +8,7 @@
   <title>Mr. Roboger's Neighborhood</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container min-vh-100">
     <div class="jumbotron">
       <h1>Mr. Roboger's Neighborhood</h1>
       <h2>Beep! Boop! Won't you be my neighbor?</h2>
@@ -21,7 +21,7 @@
       </div>
       <div class="form-group">
         <label for="numInput">Give a number</label>
-        <input id="numInput" class="form-control" type="text" required>
+        <input id="numInput" class="form-control" type="number" min="0" required>
       </div>
 
       <button type="submit" class="btn">Submit</button>
@@ -30,7 +30,9 @@
 
     <div id="output">
 
+      
     </div>
+    <button type="submit" class="btn" id="reverse">Reverse it!</button>
   </div>
 </body>
 </html>

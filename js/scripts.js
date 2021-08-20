@@ -18,17 +18,31 @@ function beepBoop (name, num) {
 }
 
 $(document).ready(function () {
+  let nameInput = "";
+  let numInput = "";
   $("#formOne").submit(function (event) {
     event.preventDefault();
+    $("#output").hide();
     $("#output").empty();
-    const nameInput = $("#nameInput").val();
-    const numInput = $("#numInput").val();
+    nameInput = $("#nameInput").val();
+    numInput = $("#numInput").val();
+
     $("#output")
-      .append("<p>" + beepBoop(nameInput, numInput)
+      .prepend("<p>" + beepBoop(nameInput, numInput)
       .join(" ") + "</p>");
+      
+    $("#output").fadeIn(1200);
+    $("#reverse").show();
+    $("#reverse").css("display", "block");
+  });
+
+  $("#reverse").click(function (event) {
+    event.preventDefault();
     $("#output")
       .append("<p>" + beepBoop(nameInput, numInput)
       .reverse()
       .join(" ") + "</p>");
-  });
+    $("#reverse").hide();
+
+  })
 });
