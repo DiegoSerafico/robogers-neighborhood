@@ -43,6 +43,5 @@ $(document).ready(function () {
       .reverse()
       .join(" ") + "</p>");
     $("#reverse").hide();
-
   })
 });

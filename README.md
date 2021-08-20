@@ -1,3 +1,44 @@
+# _Programming Language Selector_
+
+#### _Takes a name and number and gives a rhyme with numbers up to the one inputed_
+
+#### By _**Diego Serafico**_
+
+**https://diegoserafico.github.io/robogers-neighborhood/**
+
+## Technologies Used
+
+* _HTML_
+* _CSS_
+* _Markdown_
+* _JavaScript_
+
+## Description
+
+_In this page you enter your name and number and it gives a rhyme with numbers up to the one inputed. For any number including 1 it gives a Beep!, for 2 it gives a Boop! and for 3 it asks Won't you be my neighbor? with the inputed name added to it. For example if you give Diego 5 it will give "0 Beep! Boop! Won't you be my neighbor Diego?". Once this is done it will give the option to reverse the order._
+
+## Setup/Installation Requirements
+
+* _Clone this repository_
+* _Navigate to the top level of the directory_
+* _Open index.html_
+
+## Known Bugs
+
+* _N/A_
+
+## License
+
+_[MIT](https://opensource.org/licenses/MIT)_
+
+Copyright (c) 2021 Diego Serafico
+
+## Contact Information
+
+_Diego Serafico **dseraficohernandez@gmail.com**_
+
+
+
 Describe beepBoop()
 
 Test: "It will check if its handed a number"
