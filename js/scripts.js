@@ -4,7 +4,11 @@ function beepBoop (num) {
   }
   let result = [];
   for (let i = 0; i <= num; i++) {
-    result.push(i);
+    if (i.toString().includes("1")) {
+      result.push("Beep!");
+    } else {
+      result.push(i);
+    }
   }
   return result;
 }
