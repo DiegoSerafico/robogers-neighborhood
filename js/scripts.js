@@ -16,3 +16,12 @@ function beepBoop (num) {
   }
   return result;
 }
+
+$(document).ready(function () {
+  $("#formOne").submit(function (event) {
+    event.preventDefault();
+    const nameInput = $("#nameInput").val();
+    const numInput = $("#numInput").val();
+    document.getElementById("output").innerHTML = beepBoop(numInput);
+  });
+});
