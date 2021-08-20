@@ -1,0 +1,28 @@
+body {
+  background-color: #494e6b;
+}
+
+.container {
+  background-color: #192231;
+  color: azure;
+}
+
+.jumbotron {
+  background-image: url("../img/neighborhood.jpg");
+  background-size: cover;
+  color: azure;
+  -webkit-text-stroke: 1px black;
+}
+
+.jumbotron img {
+  display: block;
+  width: 50%;
+}
+
+.btn {
+  background-color: #985e6d;
+  color: azure;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
