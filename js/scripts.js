@@ -1,11 +1,11 @@
-function beepBoop (num) {
+function beepBoop (name, num) {
   if (isNaN(parseInt(num))) {
     return NaN;
   }
   let result = [];
   for (let i = 0; i <= num; i++) {
     if (i.toString().includes("3")) {
-      result.push("Won't you be my neighbor?");
+      result.push("Won't you be my neighbor " + name + "?");
     } else if (i.toString().includes("2")) {
       result.push("Boop!");
     } else if (i.toString().includes("1")) {
@@ -22,6 +22,6 @@ $(document).ready(function () {
     event.preventDefault();
     const nameInput = $("#nameInput").val();
     const numInput = $("#numInput").val();
-    document.getElementById("output").innerHTML = beepBoop(numInput);
+    document.getElementById("output").innerHTML = beepBoop(nameInput, numInput);
   });
 });
